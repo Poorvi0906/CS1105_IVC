@@ -1,5 +1,5 @@
-git clone https://github.com/poorvi0906/CS1105_IVC.git
-cd CS1105_IVC
+git clone https://github.com/poorvi0906/CS1105-Forked.git
+cd CS1105-Forked
 git checkout -b bug-fix
 git add error_log.txt
 git commit -m "Correct spelling and formatting errors in error_log.txt"
