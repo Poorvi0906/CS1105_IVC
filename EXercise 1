@@ -15,7 +15,7 @@ TASK 3:-
 echo "More detailed development notes." >> dev_notes.txt
 git add dev_notes.txt
 git commit -m "Updated development notes"
-git checkout main
+git checkout master
 echo "Updates from main branch." >> dev_notes.txt
 git add dev_notes.txt
 git commit -m "Updated dev_notes.txt from main branch"
@@ -27,5 +27,5 @@ echo "Erroneous content" >> dev_notes.txt
 git add dev_notes.txt
 git commit -m "Introduced an error"
 git log --oneline
-git revert <commit-ID>
+git revert 73ad7d9e5ccdd91182d406a6eae900be35849513
 
