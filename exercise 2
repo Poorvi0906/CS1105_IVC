@@ -1,0 +1,30 @@
+TASK 1:-
+git init ProjectX
+cd ProjectX
+echo "ProjectX: Objectives and Overview" > README.md
+git add README.md
+git commit -m "Added README with project objectives"
+TASK 2:-
+git checkout -b development
+echo "Development guidelines for ProjectX." > dev_notes.txt
+git add dev_notes.txt
+git commit -m "Add development notes"
+TASK 3:-
+git checkout -b feature1 development
+echo "Feature 1 implementation details." >> dev_notes.txt
+git add dev_notes.txt
+git commit -m "Added Feature 1 details"
+git checkout development
+git merge feature1
+git add dev_notes.txt
+git commit -m "Resolved merge conflict"
+TASK 4:-
+echo "Temporary changes to dev_notes.txt" >> dev_notes.txt
+git stash
+git checkout main
+echo "How to contribute to ProjectX." >> README.md
+git add README.md
+git commit -m "Updated README with contribution guidelines"
+git checkout development
+git stash pop
+

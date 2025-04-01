@@ -1,0 +1,31 @@
+TASK 1:-
+git init ProjectRepo
+cd ProjectRepo
+echo "*.log" > .gitignore
+git add .gitignore
+git commit -m "Added .gitignore to exclude log files"
+git remote add origin https://github.com/Poorvi0906/ProjectRepo.git
+TASK 2:-
+git checkout -b development
+echo "Initial development notes" > dev_notes.txt
+git add dev_notes.txt
+git commit -m "Added development notes"
+git push -u origin development
+TASK 3:-
+echo "More detailed development notes." >> dev_notes.txt
+git add dev_notes.txt
+git commit -m "Updated development notes"
+git checkout main
+echo "Updates from main branch." >> dev_notes.txt
+git add dev_notes.txt
+git commit -m "Updated dev_notes.txt from main branch"
+git merge development
+git add dev_notes.txt
+git commit -m "Resolved merge conflict in dev_notes.txt"
+TASK 4:-
+echo "Erroneous content" >> dev_notes.txt
+git add dev_notes.txt
+git commit -m "Introduced an error"
+git log --oneline
+git revert <commit-ID>
+
